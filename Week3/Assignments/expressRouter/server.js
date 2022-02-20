@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
-const { v4: uuidv4 } = require('uuid');
 
 //data
-const intakeRouter = require('./routes/intakeRouter')
+const intakeRouter = require('./routes/intakeRoute');
 
 const PORT = `3000`;
 
@@ -11,7 +10,7 @@ const PORT = `3000`;
 app.use(express.json());
 
 // routes
-app.use('/recItem', intakeRouter)
+app.use('/recycledItems', intakeRouter);
 
 //listen
 app.listen(PORT, () => {
