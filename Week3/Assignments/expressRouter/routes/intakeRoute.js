@@ -34,7 +34,7 @@ intakeRouter
     .put('/:itemId', (req, res) => {
         const itemId = req.params.itemId;
         const itemIndex = recycledItems.findIndex(item => item._id === itemId);
-        const updateItem = Object.assign(recycledItems[itemIndex], req.body);
+        Object.assign(recycledItems[itemIndex], req.body);
 
         res.send('Resource has been updated');
     })
