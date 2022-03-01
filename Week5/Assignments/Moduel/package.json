@@ -1,0 +1,8 @@
+{
+  "name": "pnp",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  }
+}
