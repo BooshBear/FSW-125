@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    display: inline-flex;
+    align-items: center;
+    
+    border: 2px solid greenyellow;
+    padding: 5px;
+
+    margin: 20px;
+}
+form input {
+    margin-right: 4px;
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 50px;
+}
+div {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px;
+}
+#deleter {
+    margin-right: 6px;
+    padding: 3px;
+
+    color: white;
+    background-color: red;
+}
+#editer {
+    margin-right: 6px;
+    padding: 3px;
+
+    color: white;
+    background-color: lightskyblue;
+}
