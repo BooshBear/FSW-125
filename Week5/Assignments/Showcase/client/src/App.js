@@ -38,7 +38,7 @@ function App() {
 
   useEffect(() => {
     getTodo();
-  }, []);
+  });
 
   const todoList = todos.map(todo =>
     <Todo {...todo}
@@ -47,12 +47,12 @@ function App() {
      key={todo._id}/>)
 
   return (
-    <div>
+    <>
       <TodoHandler 
         btnText='addTodo'
         submit={addTodo}/>
       {todoList}
-    </div>
+    </>
   );
 }
 

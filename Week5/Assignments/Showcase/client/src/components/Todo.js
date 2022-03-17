@@ -9,8 +9,8 @@ function Todo({deleteTodo, name, description, _id, editTodo}){
             <>
                 <h1>Name: {name}</h1>
                 <p>Description: {description}</p>
-                <button onClick={() => deleteTodo(_id)}>Delete</button>
-                <button onClick={() => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
+                <button id="deleter" onClick={() => deleteTodo(_id)}>Delete</button>
+                <button id="editer" onClick={() => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
             </>
             :
             <>
@@ -20,7 +20,7 @@ function Todo({deleteTodo, name, description, _id, editTodo}){
                     _id={_id}
                     btnText='Submit Edit'
                     submit={editTodo}/>
-                <button onClick={() => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
+                <button id="editer" onClick={() => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
             </>
             }
         </div>

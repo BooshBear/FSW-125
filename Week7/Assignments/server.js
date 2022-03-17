@@ -45,7 +45,7 @@ app
             return next(error);
         }
 
-        res.status(200).send(aryData[aryDataIndex])
+        res.status(200).send(aryDataIndex)
     })
     .get('/item/search/title', (req, res) => {
         const findTitle = req.query.title;
